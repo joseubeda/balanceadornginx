@@ -1,12 +1,12 @@
 upstream backend {
-    server 3.80.147.36;
-    server 52.91.203.137;
+   server 3.80.147.36;
+   server 52.91.203.137;
 }
 
 server {
-    listen 80;
+   listen 80;
     
     location / {
-      proxy_pass http://backend;
+       proxy_pass http://backend;
     }
 }
